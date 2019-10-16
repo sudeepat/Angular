@@ -1,0 +1,67 @@
+<br>
+<div class="container">
+        <div class="card">
+      <div class="card-header">
+     Quatation
+      <strong>10/17/2019</strong> 
+        <span class="float-right"> <strong>Status:</strong> Pending</span>
+      
+      </div>
+      <div class="card-body">
+      <div class="row mb-4">
+      <div class="col-sm-6">
+      <h6 class="mb-3">From:</h6>
+      <div>
+      <strong>Name</strong>
+      </div>
+      <div>Addrees Line 1</div>
+      <div>Addrees Line 2</div>
+      <div>Email</div>
+      <div>Phone</div>
+      </div>
+      
+      <div class="col-sm-6">
+      <h6 class="mb-3">To:</h6>
+      <div>
+      <strong>Name</strong>
+      </div>
+      <div>Addrees Line 1</div>
+      <div>Addrees Line 2</div>
+      <div>Email</div>
+      <div>Phone</div>
+      </div>
+      
+      
+      
+      </div>
+<br>
+<div class="table-responsive-sm">
+
+    <h3>List All Products</h3>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Product</th>
+          <th scope="col">Description</th>
+          <th scope="col">Quantity</th>
+          <th scope="col">Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of productsData">
+          <td>{{item.id}}</td>
+          <td>{{item.product}}</td>
+          <td>{{item.description}}</td>
+          <td>{{item.quantity}}</td>
+          <td>{{item.price}}</td>
+          <td style="display: flex">
+              <button type="button" class="btn btn-warning btn-sm" [routerLink]="[ '/edit/${item.id}']">Edit</button>
+              <button type="button" class="btn btn-danger btn-sm ml-1" (click)="delete(item)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+   
+    <button type="button" class="btn btn-success" [routerLink]="[ '/create']">Add Product</button>
+  </div>
