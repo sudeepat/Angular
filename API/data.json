@@ -1,0 +1,25 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "product": "English Book",
+      "description": "Story Book",
+      "quantity": "1",
+      "price": "5000"
+    },
+    {
+      "id": 2,
+      "product": "Pencil",
+      "description": "Probook Pencil",
+      "quantity": "5",
+      "price": "100"
+    },
+    {
+      "id": 3,
+      "product": "Pen",
+      "description": "Probook Pen",
+      "quantity": "1",
+      "price": "50"
+    }
+  ]
+}
